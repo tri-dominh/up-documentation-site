@@ -29,7 +29,7 @@ The Reporting API enables clients to create and retrieve customized reports base
 
 Report Templates define the structure of a report, including its sections and the metrics and dimensions displayed in each section. Templates can be provided by the Unified Reporting service or created and managed by individual companies.
 
-{% openapi-operation spec="reporting-api" path="/v1.0/report-templates" method="get" %}
+{% openapi-operation spec="reporting-api" path="/v2.0/report-templates" method="get" %}
 [OpenAPI reporting-api](https://api.unified.com/reporting/swagger.json)
 {% endopenapi-operation %}
 

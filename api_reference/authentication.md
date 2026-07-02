@@ -11,7 +11,7 @@ Tokens are issued by the Unified Authentication service (OAuth 2.0) using the Au
 The Unified Authentication service hostname is:
 
 ```
-https://unified-prod.auth.us-east-1.amazoncognito.com
+https://auth.unified.com
 ```
 
 Use this as `{auth_token_url}` in the steps below.
