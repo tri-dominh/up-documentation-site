@@ -26,19 +26,19 @@ Direct the user to the Unified Authentication login page (`{auth_token_url}/oaut
 |---|---|---|
 | `response_type` | Yes | `code` |
 | `client_id` | Yes | Your application's client ID |
-| `redirect_uri` | Yes | Your registered callback URL |
+| `redirect_uri` | Yes | `https://d84l1y8p4kdic.cloudfront.net` |
 | `scope` | Yes | `openid` |
 
 **Example:**
 
 ```
-{auth_token_url}/oauth2/authorize?response_type=code&client_id=CLIENT_ID&redirect_uri=https://your-callback-url&scope=openid
+{auth_token_url}/oauth2/authorize?response_type=code&client_id=CLIENT_ID&redirect_uri=https://d84l1y8p4kdic.cloudfront.net&scope=openid
 ```
 
 After a successful login, the service redirects to your `redirect_uri` with a one-time `code` in the query string:
 
 ```
-https://your-callback-url?code=6bfb35a7-373f-4273-8ec7-042cab70f0ac
+https://d84l1y8p4kdic.cloudfront.net/?code=6bfb35a7-373f-4273-8ec7-042cab70f0ac
 ```
 
 ---
@@ -70,7 +70,7 @@ curl -X POST "{auth_token_url}/oauth2/token" \
   -u "CLIENT_ID:CLIENT_SECRET" \
   -d "grant_type=authorization_code" \
   -d "code=6bfb35a7-373f-4273-8ec7-042cab70f0ac" \
-  -d "redirect_uri=https://your-callback-url"
+  -d "redirect_uri=https://d84l1y8p4kdic.cloudfront.net"
 ```
 
 **Response:**
